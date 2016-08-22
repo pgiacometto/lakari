@@ -14,4 +14,4 @@ $_['text_account']      = 'Mi Cuenta';
 $_['text_order']        = 'Historial de Pedidos';
 $_['text_wishlist']     = 'Lista de Deseos';
 $_['text_newsletter']   = 'Bolet&iacute;n Noticias';
-$_['text_powered']      = 'Creado con <a href="https://wuam.es">Dise&ntilde;o Web</a><br /> %s &copy; %s';
+$_['text_powered']      = 'Copyright © 2016 <a href="#">LakariHome.com</a>- Todos los derechos reservados<span style="margin-left: 20px">Desarrollado por <a href="https://gimalca.com" target="_blank" >Gimalca.com</a></span>';

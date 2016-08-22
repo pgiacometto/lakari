@@ -16,7 +16,7 @@
     <?php } else { ?>
     <?php $class = 'col-sm-12'; ?>
     <?php } ?>
-    <div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
+    <!--div id="content" class="<?php echo $class; ?>"><?php echo $content_top; ?>
       <h1><?php echo $text_my_account; ?></h1>
       
       <h3><?php echo $text_my_account; ?></h3>
@@ -52,6 +52,6 @@
         <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
       </ul>
       <?php echo $content_bottom; ?></div>
-    <?php echo $column_right; ?></div>
+    <?php echo $column_right; ?></div-->
 </div>
 <?php echo $footer; ?>

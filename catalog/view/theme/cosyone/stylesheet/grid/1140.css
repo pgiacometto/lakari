@@ -6,7 +6,7 @@ body {
 	min-width:1200px; /* if responsive layout is disabled */
 }
 .container, .breadcrumb, #menu, .header_right {
-	max-width: 1600px;
+	/* max-width: 1600px; */
 	padding: 0px 15px 0px 15px;
 }
 #home-top-left .wrapper, #home-top-right .wrapper {

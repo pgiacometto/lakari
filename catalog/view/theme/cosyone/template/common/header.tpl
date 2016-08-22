@@ -68,6 +68,7 @@
   <div class="promo_message"><?php echo $cosyone_top_promo_message; ?></div>
   <div class="links contrast_font">
    <?php if ($logged) { ?>   
+  
   <a href="<?php echo $account; ?>"><?php echo $text_account; ?></a>
   <a href="<?php echo $wishlist; ?>" id="wishlist-total"><?php echo $text_wishlist; ?></a>
   <a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a>
@@ -117,7 +118,9 @@
 <div class="menu_wrapper">
 <div class="container menu_border"></div>
 <div class="container menu_holder">
-<div id="menu">
+   
+<div id="menu"> 
+    <div class="logo"><a href="<?php echo $home; ?>"><img src="<?php echo $logo; ?>" title="<?php echo $name; ?>" alt="<?php echo $name; ?>" /></a></div>
 <?php if($cosyone_header_style == 'header2') { ?>
     	<?php } else { ?>
         <div class="shortcuts_wrapper">
@@ -145,11 +148,12 @@
           <div class="wrapper">
           <ul><?php foreach ($category_1['children'] as $category_2) { ?>
           <li class="column level2">
+              <?php if($cosyone_menu_mega_second_thumb == 'enabled' && $category_2['thumb']) { ?>
+                <a href="<?php echo $category_2['href']; ?>" class="sub_thumb"><img src="<?php echo $category_2['thumb']; ?>" alt="<?php echo $category_2['name']; ?>"/></a>
+              <?php } ?>
             <a href="<?php echo $category_2['href']; ?>"><?php echo $category_2['name']; ?><i class="fa fa-caret-right"></i></a>
-            <?php if($cosyone_menu_mega_second_thumb == 'enabled' && $category_2['thumb']) { ?>
-          <a href="<?php echo $category_2['href']; ?>" class="sub_thumb"><img src="<?php echo $category_2['thumb']; ?>" alt="<?php echo $category_2['name']; ?>"/></a>
-          <?php } ?>
-              <?php if ($category_2['children']) { ?>
+            
+              <?php $disable = false; if ($category_2['children'] && $disable ) { ?>
               <div class="third">
               <ul>
                <?php foreach ($category_2['children'] as $category_3) { ?>
@@ -189,6 +193,13 @@
 		<li><a href="<?php echo $cosyone_custom_menu_url5; ?>"><?php echo $cosyone_custom_menu_title5; ?></a></li>
         <?php } ?>
       </ul>
+        <div class="links contrast_font">
+            <a><i class="fa fa-facebook-official"></i></a>
+            <a><i class="fa fa-instagram"></i></a>
+            <a><i class="fa fa-twitter"></i></a>
+            <a><i class="fa fa-pinterest-p"></i></a>
+
+        </div>
     </div> <!-- menu_holder ends -->
 </div> <!-- menu ends -->
 </div> <!-- menu_wrapper ends -->
@@ -248,5 +259,5 @@
 </div>
 </div> <!-- header_wrapper ends -->
 </div> <!-- inner conainer ends -->
-<div class="breadcrumb_wrapper"></div>
+<div class="breadcrumb_wrapper container"></div>
 <div id="notification" class="container"></div>
